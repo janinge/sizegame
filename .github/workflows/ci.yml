@@ -213,7 +213,7 @@ jobs:
       shell: cmd
       run: |
         cd go
-        go build -trimpath -ldflags="-s -w -d" hello.go
+        go build -trimpath -ldflags="-s -w" hello.go
         go version
         (
         echo LANGUAGE=Go
@@ -357,7 +357,7 @@ jobs:
         cd rust
         # By default the generated binary will depend on VCRuntime140.dll that is
         # not part of a clean OS install. Pass +crt-static.
-        rustc -C opt-level=z -C strip=symbols -C target-feature=+crt-static hello.rs
+        rustc -C opt-level=s -C strip=symbols hello.rs
         rustc --version
         (
         echo LANGUAGE=Rust
