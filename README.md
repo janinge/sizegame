@@ -11,22 +11,23 @@ Round 3 was [carried out](https://github.com/MichalStrehovsky/sizegame/actions/r
 Language | Size (kB) | Compiler | Notes
 -------- | ---- | -------- | -----
 Assembly | 2 | Microsoft Macro Assembler Version 14.35.32217.1 |  
-Zig | 5 | 0.11.0-dev.4191+1bf16b172 |  
-Nim | 123 | Nim Compiler Version 1.6.14 [Windows: amd64] |  
 C | 135 | Microsoft C/C++ Optimizing Compiler Version 19.35.32217.1 for x64 |  
-C++ | 230 | Microsoft C/C++ Optimizing Compiler Version 19.35.32217.1 for x64 |  
-Rust | 250 | rustc 1.71.0 (8ede3aae2 2023-07-12) |  
-D | 491 | DMD64 D Compiler v2.104.2-dirty |  
-C# | 1087 | 8.0.100-preview.6.23330.14 |  
-Scala | 1435 | Scala 3.2.2 Scala-native 0.4.10 |  
-Go | 1928 | go version go1.20.6 windows/amd64 |  
+C++ | 220 | Microsoft C/C++ Optimizing Compiler Version 19.35.32217.1 for x64 |  
 Crystal | 1964 | Crystal 1.9.2 [1908c81] (2023-07-19) |  
-F# | 3319 | 8.0.100-preview.6.23330.14 |  
-Dart | 4669 | Dart SDK version: 3.0.6 (stable) (Tue Jul 11 18:49:07 2023 +0000) on "windows_x64" |  
-Swift | 6100 | compnerd.org Swift version 5.8.1 (swift-5.8.1-RELEASE) | Includes: swiftCore.dll, vcruntime140.dll, vcruntime140_1.dll, msvcp140.dll 
+C# | 1076 | 8.0.100-rc.1.23455.8 |  
+D | 486 | DMD64 D Compiler v2.104.2-dirty |  
+Dart | 4650 | Dart SDK version: 3.0.6 (stable) (Tue Jul 11 18:49:07 2023 +0000) on "windows_x64" |  
+F# | 3243 | 8.0.100-rc.1.23455.8 |  
+Go | 1236 | go version go1.20.6 windows/amd64 |  
+Haskell | 11388 | The Glorious Glasgow Haskell Compilation System, version 9.6.2 |  
 Java | 6586 | native-image 17.0.8 2023-07-18 | Includes vcruntime140.dll 
 Kotlin | 6594 | kotlinc-jvm 1.8.10 | Includes vcrtuntime140.dll, AOT compiled with GraalVM, same version as the Java benchmark 
-Haskell | 11388 | The Glorious Glasgow Haskell Compilation System, version 9.6.2 |  
+Nim | 215 | Nim Compiler Version 1.6.14 [Windows: amd64] |  
+Rust | 156 | rustc 1.71.0 (8ede3aae2 2023-07-12) |  
+Scala | 1435 | Scala 3.2.2 Scala-native 0.4.10 |  
+Swift | 6100 | compnerd.org Swift version 5.8.1 (swift-5.8.1-RELEASE) | Includes: swiftCore.dll, vcruntime140.dll, vcruntime140_1.dll, msvcp140.dll 
+V | 252 | V 0.4.1 77219de |  
+Zig | 5 | 0.11.0-dev.4191+1bf16b172 |  
 
 ![The above table presented as a bar chart](report.png)
 
