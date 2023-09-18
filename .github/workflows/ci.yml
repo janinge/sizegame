@@ -41,7 +41,7 @@ jobs:
         # By default the generated binary will depend on VCRuntime140.dll that is
         # not part of a clean OS install. Pass /MT
         cl
-        cl /MT /Os hello.c
+        cl /MT /O1 hello.c
         (
         echo LANGUAGE=C
         echo COMPILER=Microsoft C/C++ Optimizing Compiler Version 19.35.32217.1 for x64
@@ -67,7 +67,7 @@ jobs:
         # not part of a clean OS install. Pass /MT
         # Generates a warning if /EHsc is not passed. So pass it.
         cl
-        cl /MT /Os /EHsc hello.cpp
+        cl /MT /O1 /EHsc hello.cpp
         (
         echo LANGUAGE=C++
         echo COMPILER=Microsoft C/C++ Optimizing Compiler Version 19.35.32217.1 for x64
@@ -213,7 +213,7 @@ jobs:
       shell: cmd
       run: |
         cd go
-        go build hello.go
+        go build -trimpath -ldflags="-s -w -d" hello.go
         go version
         (
         echo LANGUAGE=Go
@@ -357,7 +357,7 @@ jobs:
         cd rust
         # By default the generated binary will depend on VCRuntime140.dll that is
         # not part of a clean OS install. Pass +crt-static.
-        rustc -C opt-level=2 -C target-feature=+crt-static hello.rs
+        rustc -C opt-level=z -C strip=symbols -C target-feature=+crt-static hello.rs
         rustc --version
         (
         echo LANGUAGE=Rust
